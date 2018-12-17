@@ -2,7 +2,7 @@
 
 #include "FlockAIPlugin.h"
 #include "FlockAICheckCharacter.h"
-#include "Kismet/HeadMountedDisplayFunctionLibrary.h"
+#include "HeadMountedDisplayFunctionLibrary.h"
 
 
 // Sets default values
@@ -31,6 +31,7 @@ void AFlockAICheckCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+
 	if (UHeadMountedDisplayFunctionLibrary::IsHeadMountedDisplayConnected())
 	{
 		UHeadMountedDisplayFunctionLibrary::EnableHMD(true);

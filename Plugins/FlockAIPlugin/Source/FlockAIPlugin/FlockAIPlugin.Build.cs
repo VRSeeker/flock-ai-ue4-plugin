@@ -4,7 +4,7 @@ using UnrealBuildTool;
 
 public class FlockAIPlugin : ModuleRules
 {
-	public FlockAIPlugin(TargetInfo Target)
+	public FlockAIPlugin(ReadOnlyTargetRules Target) : base(Target)
 	{
 		
 		PublicIncludePaths.AddRange(
@@ -27,6 +27,7 @@ public class FlockAIPlugin : ModuleRules
 			new string[]
 			{
 				"Core",
+                "HeadMountedDisplay",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
